@@ -13,4 +13,30 @@ function open_close_menu(){
 
 }
 
+$(document).ready(function() {
+    
+    var a = "";
+    $("#op_menu a.titlesubmenu").click(function() {
+      if (a != "") {
+        $("#" + a).prev("a").removeClass("downarrow");
+        $("#" + a).slideUp("fast")
+        };
+      if (a == $(this).attr("name")) {
+        $("#" + $(this).attr("name")).slideUp("slow");
+        $(this).removeClass("downarrow");
+        a = ""
+      } else {
+        $("#" + $(this).attr("name")).slideDown("fast");
+        a = $(this).attr("name");
+        $(this).addClass("downarrow")
+        $("#textsimce").html("123" + a)
+
+    };
+      return false
+    });
+    
+    
+    
+    });
+
   
