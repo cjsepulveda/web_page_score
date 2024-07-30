@@ -42,6 +42,18 @@ header{
     z-index: 200;
 }
 
+img {
+    width: 135px;
+    height: 51px;
+    margin-top: 100px;
+
+    }
+.contenedor{
+    position: relative;
+    display: inline-block;
+
+}
+
 #menu_side .options__menu a.titlesubmenu .option:after {
     font-family: FontAwesome;
     content: "\2b";
@@ -75,7 +87,7 @@ header{
 
 
 .menu__side{
-    width: 80px;
+    width: 40px;
     height: 100%;
     background:#1783db; 
     position: fixed;
@@ -103,13 +115,13 @@ header{
 
 
 .name__page{
-    padding: 20px 10px;
+    padding: 20px 10px 20px 0px;
+    height: 100px;
     position: absolute;
-    left: -10px;
+    left: -4px;
     display: flex;
     align-items: center;
-    margin-top: 10px;
-    justify-content: center;
+    justify-content: flex-start;
     transform: translateX(10px);
     cursor: pointer;
 }
@@ -117,6 +129,7 @@ header{
 .name__page i{
     width: 20px;
     margin-right: 20px;
+    margin-left: 0px;
     cursor: pointer;
 
     
@@ -156,11 +169,10 @@ ul li {
 
 .options__menu a:focus{
     color: rgb(255, 255, 255);
-    font-weight: 100;
+    font-weight: bold;
+    background-color: #001885;
        
 }
-
-
 
 
 .options__menu .option{
@@ -205,9 +217,11 @@ ul li {
 }
 
 .options__menu .option h4{
-    font-weight: 400;
+    font-weight: normal;
     cursor: pointer;
 }
+
+
 
 a.selected{
     color: #fff;
@@ -226,11 +240,11 @@ a.selected{
 /*Clases para usar en JavaScript*/
 
 .body_move{
-    margin-left: 270px;
+    margin-left: 260px;
 }
 
 .menu__side_move{
-    width: 270px;
+    width: 260px;
 }
 
 
