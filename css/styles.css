@@ -155,10 +155,10 @@ ul li {
 
 .options__menu a{
     color: #ffffffb2;
-    cursor: default;
     display: block;
     position: relative;
     transition: color 300ms;
+    cursor: pointer;
     
     
     
